@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  let itemOne = prompt("enter first item :");
+  let itemSec = prompt("enter second item  :");
+  let quantity1 = prompt("order quantity item one :");
+  let quantity2 = prompt("order quantity item second :");
+  let shippingCharges = +prompt("Shipping charges :");
+  document.write("item one = ",itemOne)
+  document.write("<br>item sec = ",itemSec)
+  document.write("<br>quantity1 = ",quantity1)
+  document.write("<br>quantity2 = ",quantity2)
+  document.write("<br>shipping charges = ",shippingCharges)
+ let costOfOneitem = itemOne * quantity1;
+ document.write( "<br>total cost of item one = ",costOfOneitem);
+ let costOfSecitem = itemSec * quantity2;
+ document.write("<br>total cost of item sec = ",costOfSecitem);
+ 
+ let totalCost = costOfOneitem + costOfSecitem + shippingCharges;
+ document.write( "<br>total cost is = ",totalCost);
+
+
+
+    </script>
+</body>
+</html>
